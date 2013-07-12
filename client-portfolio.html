@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="James Sacci portfolio of website design clients since 2006 are listed as screen shots with animated hover effects." />
+  
+  <title>Website Design Client Portfolio</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+<!--  <link rel="stylesheet" href="css/style.css" />-->
+  <link rel="stylesheet" href="css/component.css" />
+  <link rel="stylesheet" href="fonts/foundation_icons_social/foundation_icons_social/stylesheets/social_foundicons.css"> 
+    
+  <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+  
+  <script src="js/modernizr.custom.js"></script>
+  
+  <style type="text/css">
+  .item {
+  height: 323px;
+  margin: 150px 20px 0;
+  padding: 5px;
+  border-radius:2px;
+  box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
+  background-color: white;
+  font-size: 14px;
+  /*initially all items are moved 300px up and faded out and rotated, they will fade 
+  into view and back to position later via javascript*/
+  opacity: 0;
+  position: relative;
+  transform: rotate(-135deg);
+  transition: all .3s ease, opacity 2s ease,  top 1s ease;
+}
+  figure{
+  width:100%;
+  height:100%;
+}
+.view {
+  overflow: hidden;
+  width: 100%;
+  height: 190px;
+  position: relative;
+}
+.view img {
+  width: 300px;
+  height: 190px;
+  transition: width .3s ease;
+  position: absolute;
+}
+ 
+figcaption {
+  height: 60px;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+figcaption p {
+  font: bold 12px/18px "Arial", sans-serif;
+  text-transform: uppercase;
+  padding: 0 10px;
+  margin:  5px 0;
+  width:100%;
+  background-color: #f0f0f0;
+  color:#333;
+}
+/*the text of the paragraph tags in the footer(figcaption) is initially hidden to the left*/
+figcaption span {
+  left: -100%;
+  opacity: 0;
+}
+figcaption a{
+   color: #CC320F; 
+}
+ 
+.date {
+  z-index: 1;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1px;
+  background-color: #CC320F;
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  transition: transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+}
+
+.item:hover {
+  height: 350px;
+  padding: 15px 0;
+  transform: translateY(-68px);
+}
+.item:hover .date {
+  transform: translate3d(0, 61px, 0);
+}
+.item:hover figcaption {
+  animation: show .25s ease-in .120s forwards;
+}
+.item:hover p:nth-of-type(1) span{
+  animation: slideOut .25s ease-out .15s forwards;
+}
+.item:hover p:nth-of-type(2) span{
+  animation: slideOut .2s  ease-out .3s forwards;
+}
+.item:hover .view {
+  height: 170px;
+}
+.item:hover .view img {
+  top: -20px;
+  left: -20px;
+}
+
+/*animation to show the metadata*/
+@keyframes slideOut {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  95% {
+    left: 0;
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+/*animation to show the footer, which will simply up its opacity to 1*/
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+</style>
+
+  
+</head>
+<body>
+
+	<!-- Navigation -->
+ 
+  <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <span>
+          <a href="index.html" title="Home Page">My Web Design Portfolio &amp; My Life</a>
+        </span>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul>
+ 
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+        <li><a href="about.html" title="My Bio">About Me</a></li>
+        <!--<li class="has-dropdown">
+          <a href="#">About Me</a>
+          <ul class="dropdown">
+            <li><label>Section Name</label></li>
+            <li class="has-dropdown">
+              <a href="#" class="">Has Dropdown, Level 1</a>
+              <ul class="dropdown">
+                <li><a href="#">Dropdown Options</a></li>
+                <li><a href="#">Dropdown Options</a></li>
+                <li><a href="#">Level 2</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+                <li><a href="#">Subdropdown Option</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><label>Section Name</label></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li><a href="#">Dropdown Option</a></li>
+            <li class="divider"></li>
+            <li><a href="#">See all &rarr;</a></li>
+          </ul>
+        </li>-->
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a href="#">Portfolio</a>
+          <ul class="dropdown">
+          	<li><label>Website Design</label></li>
+          	<li><a href="#">Clients</a></li>
+            <li><label>Scuba</label></li>
+          	<li><a href="photo-gallery.html" title="Travel Photo Gallery">Photography</a></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li><a href="#">Playground</a></li>
+        <li class="divider"></li>
+        <li>
+          <a href="contact.html" title="Contact and Social Media">Connect</a></li>
+      </ul>
+    </section>
+  </nav> 
+  
+  <!-- Main content -->
+ 	<div class="row">
+		<div class="large-12 columns">
+			<h1>Web Design Portfolio of Past and Current Clients</h1>
+            
+            <h3 class="subheader">Most of my clients ask for custom designed HTML and CSS coded websites. I also use Content Management Systems (<abbr>CMS</abbr>), WordPress, Joomla, and e&#45;commerce software solutions.</h3>
+            <cite>James Sacci</cite>
+            
+			<hr />
+		</div>
+	</div>
+    
+    <div class="row">
+    <div class="large-12 columns">
+ 
+    <!-- Desktop Slider -->
+ 
+      <div class="hide-for-small">
+        <ul data-orbit>
+              <li>
+              <img src="http://placehold.it/1000x400&text=Slide Image" alt="slide image">
+              <div class="orbit-caption">...</div>
+              </li>
+              <li>
+              <img src="http://placehold.it/1000x400&text=Slide Image" alt="slide image">
+              <div class="orbit-caption">...</div>
+              </li>
+              <li>
+              <img src="http://placehold.it/1000x400&text=Slide Image" alt="slide image">
+              <div class="orbit-caption">...</div>
+              </li>
+          </ul>
+        </div>
+ 
+    <!-- End Desktop Slider -->
+ 
+ 
+    <!-- Mobile Header -->
+ 
+ 
+    <div class="row">
+      <div class="small-12 show-for-small"><br>
+        <img src="http://placehold.it/1000x600&text=For Small Screens" />
+      </div>
+    </div>
+ 
+ 
+  <!-- End Mobile Header -->
+ 
+    </div>
+  </div><br>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+ 
+    <!-- Thumbnails -->
+ 
+        <div class="large-3 small-6 columns">
+          <img src="img/website-screen-shot.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+          <img src="img/tssc.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+          <img src="img/the-body-fix.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+          <img src="img/sonorgraphics.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+    <!-- End Thumbnails -->
+ 
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+ 
+    <!-- Thumbnails -->
+ 
+        <div class="large-3 small-6 columns item">
+        <figure>
+          <div class="view">
+          <img src="img/at-your-doorstep.jpg" />
+          </div>
+          <figcaption>
+            <p><span><a href="http://www.vladstudio.com/wallpaper/?thetwoandthebubbles">The Two and The Bubbles</a></span></p>
+            <p><span>By Vlad Gerasimov</span></p>
+          </figcaption>
+          </figure>
+   			 <div class="date">2005</div>
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+          <img src="img/ayds-ecommerce.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+          <img src="img/paw.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+          <img src="img/sacci-hypnosis.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
+ 
+    <!-- End Thumbnails -->
+ 
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+ 
+    <!-- Content -->
+ 
+        <div class="large-8 columns">
+          <div class="panel radius">
+ 
+          <div class="row">
+          <div class="large-6 small-6 columns">
+ 
+            <h4>Header</h4><hr/>
+            <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
+            </h5>
+ 
+          <div class="show-for-small" align="center">
+            <a href="#" class="small radius button">Call To Action!</a><br>
+ 
+            <a href="#" class="small radius button">Call To Action!</a>
+          </div>
+ 
+          </div>
+          <div class="large-6 small-6 columns">
+ 
+            <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.
+          </p>
+        </div>
+ 
+        </div>
+        </div>
+        </div>
+ 
+          <div class="large-4 columns hide-for-small">
+ 
+          <h4>Get In Touch!</h4><hr/>
+ 
+          <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+ 
+          <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+ 
+ 
+        </div>
+ 
+    <!-- End Content -->
+ 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Footer -->
+  <div class="dark">
+  	<footer class="row">
+    	
+        <div class="large-12 columns">
+        
+        	<div class="row">
+            
+            	<div class="large-6 columns">
+            		<p class="light-text">&copy; James Sacci Copy and use as you like!</p>
+            	</div>
+                
+                <div class="large-6 columns">
+                	<ul class="inline-list">
+                		<li><a href="#">About Me</a></li>
+                		<li><a href="#">Portfolio</a></li>
+                		<li><a href="#">Playground</a></li>
+                		<li><a href="#">Connect</a></li>
+                	</ul>
+                </div>
+                
+            </div><!-- end .row -->
+            
+            
+            
+        </div>
+    	
+    </footer>
+  </div><!-- end .dark -->
+ 
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>  
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  
+</body>
+</html>
