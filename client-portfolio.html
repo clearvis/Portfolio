@@ -18,129 +18,84 @@
     
   <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
   
-  <script src="js/modernizr.custom.js"></script>
+ <script src="portfolio-js/modernizr.custom.js"></script>
   
-  <style type="text/css">
-  .item {
-  height: 323px;
-  margin: 150px 20px 0;
-  padding: 5px;
-  border-radius:2px;
-  box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.5);
-  background-color: white;
-  font-size: 14px;
-  /*initially all items are moved 300px up and faded out and rotated, they will fade 
-  into view and back to position later via javascript*/
-  opacity: 0;
-  position: relative;
-  transform: rotate(-135deg);
-  transition: all .3s ease, opacity 2s ease,  top 1s ease;
-}
-  figure{
-  width:100%;
-  height:100%;
-}
-.view {
-  overflow: hidden;
-  width: 100%;
-  height: 190px;
-  position: relative;
-}
-.view img {
-  width: 300px;
-  height: 190px;
-  transition: width .3s ease;
-  position: absolute;
-}
- 
-figcaption {
-  height: 60px;
-  width: 100%;
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  overflow: hidden;
-  opacity: 0;
-}
-figcaption p {
-  font: bold 12px/18px "Arial", sans-serif;
-  text-transform: uppercase;
-  padding: 0 10px;
-  margin:  5px 0;
-  width:100%;
-  background-color: #f0f0f0;
-  color:#333;
-}
-/*the text of the paragraph tags in the footer(figcaption) is initially hidden to the left*/
-figcaption span {
-  left: -100%;
-  opacity: 0;
-}
-figcaption a{
-   color: #CC320F; 
-}
- 
-.date {
-  z-index: 1;
-  width: 50px;
-  height: 30px;
-  line-height: 30px;
-  color: #fff;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 1px;
-  background-color: #CC320F;
-  position: absolute;
-  bottom: 30px;
-  left: 15px;
-  transition: transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+<style type="text/css">
+.client-item .client-view {
+	text-align: left;
+    position: relative;
 }
 
-.item:hover {
-  height: 350px;
-  padding: 15px 0;
-  transform: translateY(-68px);
-}
-.item:hover .date {
-  transform: translate3d(0, 61px, 0);
-}
-.item:hover figcaption {
-  animation: show .25s ease-in .120s forwards;
-}
-.item:hover p:nth-of-type(1) span{
-  animation: slideOut .25s ease-out .15s forwards;
-}
-.item:hover p:nth-of-type(2) span{
-  animation: slideOut .2s  ease-out .3s forwards;
-}
-.item:hover .view {
-  height: 170px;
-}
-.item:hover .view img {
-  top: -20px;
-  left: -20px;
+.client-item figure {
+	margin: 0;
+    position: relative;
 }
 
-/*animation to show the metadata*/
-@keyframes slideOut {
-  0% {
-    left: -100%;
-    opacity: 0;
-  }
-  95% {
-    left: 0;
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+.client-item figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
 }
-/*animation to show the footer, which will simply up its opacity to 1*/
-@keyframes show {
-  to {
-    opacity: 1;
-  }
+
+.client-item figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #2c3f52;
+    color: #ed4e6e;
+}
+
+.client-item figcaption h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+ 
+.client-item figcaption span:before {
+    content: 'by ';
+}
+ 
+.client-item figcaption a {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #ed4e6e;
+    color: #fff;
+}
+
+.cs-style-6 figure img {
+    z-index: 10;
+    -webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+ 
+.no-touch .cs-style-6 figure:hover img,
+.cs-style-6 figure.cs-hover img {
+	-webkit-transform: translateY(-50px) scale(0.5);
+	-moz-transform: translateY(-50px) scale(0.5);
+	-ms-transform: translateY(-50px) scale(0.5);
+	transform: translateY(-50px) scale(0.5);
+}
+
+.cs-style-6 figcaption {
+	height: 100%;
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cs-style-6 figcaption h3 {
+    margin-top: 60%;
+}
+ 
+.cs-style-6 figcaption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 </style>
 
@@ -165,45 +120,20 @@ figcaption a{
       <!-- Right Nav Section -->
       <ul class="right">
         <li class="divider"></li>
-        <li><a href="about.html" title="My Bio">About Me</a></li>
-        <!--<li class="has-dropdown">
-          <a href="#">About Me</a>
-          <ul class="dropdown">
-            <li><label>Section Name</label></li>
-            <li class="has-dropdown">
-              <a href="#" class="">Has Dropdown, Level 1</a>
-              <ul class="dropdown">
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Dropdown Options</a></li>
-                <li><a href="#">Level 2</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-                <li><a href="#">Subdropdown Option</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><label>Section Name</label></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li><a href="#">Dropdown Option</a></li>
-            <li class="divider"></li>
-            <li><a href="#">See all &rarr;</a></li>
-          </ul>
-        </li>-->
+        <li><a href="about.html" title="My Web Design Bio">About Me</a></li>
         <li class="divider"></li>
         <li class="has-dropdown">
           <a href="#">Portfolio</a>
           <ul class="dropdown">
           	<li><label>Website Design</label></li>
-          	<li><a href="#">Clients</a></li>
-            <li><label>Scuba</label></li>
+          	<li><a href="client-portfolio.html" title="Websites I have designed">Clients</a></li>
+            <li><label>Scuba Travel</label></li>
           	<li><a href="photo-gallery.html" title="Travel Photo Gallery">Photography</a></li>
+            <li><a href="video-gallery.html" title="Scuba Video Gallery">Video</a></li>
           </ul>
         </li>
         <li class="divider"></li>
-        <li><a href="#">Playground</a></li>
+        <li><a href="html-css-examples.html" title="Cutting edge coding examples">Playground</a></li>
         <li class="divider"></li>
         <li>
           <a href="contact.html" title="Contact and Social Media">Connect</a></li>
@@ -269,25 +199,21 @@ figcaption a{
  
     <!-- Thumbnails -->
  
-        <div class="large-3 small-6 columns">
+        <div class="large-4 small-6 columns">
           <img src="img/website-screen-shot.jpg" />
           <h6 class="panel">Description</h6>
         </div>
  
-        <div class="large-3 small-6 columns">
+        <div class="large-4 small-6 columns">
           <img src="img/tssc.jpg" />
           <h6 class="panel">Description</h6>
         </div>
  
-        <div class="large-3 small-6 columns">
+        <div class="large-4 small-6 columns">
           <img src="img/the-body-fix.jpg" />
           <h6 class="panel">Description</h6>
         </div>
  
-        <div class="large-3 small-6 columns">
-          <img src="img/sonorgraphics.jpg" />
-          <h6 class="panel">Description</h6>
-        </div>
  
     <!-- End Thumbnails -->
  
@@ -301,42 +227,56 @@ figcaption a{
  
     <!-- Thumbnails -->
  
-        <div class="large-3 small-6 columns item">
+        <div class="large-4 small-6 columns client-item cs-style-6">
+        <div class="client-view">
         <figure>
-          <div class="view">
+          
           <img src="img/at-your-doorstep.jpg" />
-          </div>
+          
           <figcaption>
-            <p><span><a href="http://www.vladstudio.com/wallpaper/?thetwoandthebubbles">The Two and The Bubbles</a></span></p>
-            <p><span>By Vlad Gerasimov</span></p>
+            <h3>Camera</h3>
+                <span>Jacob Cummings</span>
+                <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
           </figcaption>
           </figure>
-   			 <div class="date">2005</div>
+          </div>
           <h6 class="panel">Description</h6>
         </div>
  
-        <div class="large-3 small-6 columns">
+        <div class="large-4 small-6 columns">
           <img src="img/ayds-ecommerce.jpg" />
           <h6 class="panel">Description</h6>
         </div>
  
-        <div class="large-3 small-6 columns">
+        <div class="large-4 small-6 columns">
           <img src="img/paw.jpg" />
           <h6 class="panel">Description</h6>
         </div>
- 
-        <div class="large-3 small-6 columns">
+        
+       </div>
+    </div>
+  </div> 
+   <!-- End Thumbnails -->    
+     
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+      <!-- Thumbnails -->
+      
+        <div class="large-4 small-6 columns">
           <img src="img/sacci-hypnosis.jpg" />
           <h6 class="panel">Description</h6>
         </div>
  
-    <!-- End Thumbnails -->
+        <div class="large-4 small-6 columns">
+          <img src="img/sonorgraphics.jpg" />
+          <h6 class="panel">Description</h6>
+        </div>
  
-      </div>
+       </div>
     </div>
-  </div>
- 
- 
+  </div> 
+   <!-- End Thumbnails -->    
  
   <div class="row">
     <div class="large-12 columns">
@@ -421,6 +361,8 @@ figcaption a{
     	
     </footer>
   </div><!-- end .dark -->
+  
+  <script src="portfolio-js/toucheffects.js"></script>
  
   <script>
   document.write('<script src=' +
