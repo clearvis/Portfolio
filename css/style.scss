@@ -1,0 +1,193 @@
+@import "normalize";
+@import "foundation";
+
+/* CSS Custom Style Document
+Colors:
+Dark Blue: #050B23
+Reddish Brown: #8B2F3E
+Bright Green: #477001
+Nuetral Green: #878B3F
+Dull Green: #52573D
+ */
+
+/* Default Link Styles */
+body {
+	color: #050B23;
+}
+a {
+  	color: #8B2F3E;
+}
+a:hover, a:focus {
+    color: #477001; 
+}
+
+h1, h2, h3, h4, h5, h6, .name {
+	color: #52573D;
+	font-weight: bold;
+}
+
+blockquote, blockquote p {
+    color: #878B3F;
+}
+blockquote {
+    border-left: 1px solid #477001;
+}
+
+blockquote cite {
+color: #52573D;
+}
+
+.page-header h1 {
+	display: inline-block;
+	text-align: center;
+	-webkit-transform: skew(-14deg) rotate(-6deg);
+	transform: skew(-14deg) rotate(-6deg) translateZ(0);
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	margin-left: .5em;
+}	
+
+.light-text {
+    color: #477001;
+}
+
+.top-bar, .top-bar-section li a:not(.button), .top-bar-section ul {
+	background: #8B2F3E;
+}
+
+.dark {
+    background-color: #050B23;
+}
+
+.color {
+    background-color: #878B3F;
+}
+
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+    color: #050B23;
+}
+
+.panel {
+    border-color: #52573D;
+}
+
+.code-icon-font {
+    color: #477001;
+    display: block;
+    font-size: 9em;
+    text-align: left;
+}
+
+button, .button {
+    background-color: #477001;
+	border-color: #878B3F;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+background-color: #52573D;
+}
+
+.top-bar-section ul li > a:hover {
+	color: #477001;
+}
+
+.label { 
+background-color: #878B3F;
+}
+
+.inline-list > li > a > i {
+	font-size: 2em;
+}
+
+@media only screen and (min-width: 58.75em) {
+	
+	.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+		border-right: solid 1px #812837;
+		border-left: solid 1px #9B3E4D;
+	}
+	
+	.top-bar-section .dropdown li label {
+		background: #4F3A39;
+	}
+	
+}
+
+.top-bar-section .dropdown label {
+	color: #619B79;
+}
+
+
+/**** IMPORTANT THESE ARE NEEDED ****/	
+	#container {
+	  float:none;
+	  background: #ffffff;
+	  padding: 0;
+	  margin:0 auto;
+	  margin-bottom:30px;
+	  /* optional */
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;
+	  /* content-box is NEEDED. if border-box is enabled
+	     then it when Masonry calculates the height and width
+		 of the container it counts incorrectly and the result
+		 images running to the edge of the container on the right
+		 and bottom sides. Only apply content-box to the container. */
+	  -webkit-box-sizing:content-box;
+	  -moz-box-sizing:content-box;
+	  box-sizing:content-box;
+	}
+
+	.box {
+	  margin: 5px;
+	  float: left;
+	  /* optional */
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;
+	}
+	.box img, { display: block; width: 100%; }
+
+	/* unfortunately masonry needs hard pxs for images */
+	.col1 { width: 80px; }
+	.col2 { width: 180px; }
+	.col3 { width: 280px; }
+	.col4 { width: 380px; }
+	.col5 { width: 480px; }
+	.col1 img { max-width: 80px; }
+	.col2 img { max-width: 180px; }
+	.col3 img { max-width: 280px; }
+	.col4 img { max-width: 380px; }
+	.col5 img { max-width: 480px; }
+
+	/* animations for the transition/reordering */
+	.transitions-enabled.masonry,
+	.transitions-enabled.masonry .masonry-brick {
+	  -webkit-transition-duration: 0.7s;
+	  -moz-transition-duration: 0.7s;
+	  -ms-transition-duration: 0.7s;
+	  -o-transition-duration: 0.7s;
+	  transition-duration: 0.7s;
+	}
+	.transitions-enabled.masonry {
+	  -webkit-transition-property: height, width;
+	  -moz-transition-property: height, width;
+	  -ms-transition-property: height, width;
+	  -o-transition-property: height, width;
+	  transition-property: height, width;
+	}
+	.transitions-enabled.masonry  .masonry-brick {
+	  -webkit-transition-property: left, right, top;
+	  -moz-transition-property: left, right, top;
+	  -ms-transition-property: left, right, top;
+	  -o-transition-property: left, right, top;
+	  transition-property: left, right, top;
+	}
+
+
+
+/**** Clearfix ****/
+	.clearfix:before, .clearfix:after { content: ""; display: table; }
+	.clearfix:after { clear: both; }
+	.clearfix { zoom: 1; }
+

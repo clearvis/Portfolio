@@ -9,11 +9,31 @@
   <meta name="Copyright" content="Copyright James Sacci 2013. All Rights Reserved.">
   <meta name="viewport" content="width=device-width" />
   
-  <title>James Sacci Website Designer and Amateur Underwater Photographer</title>
+   <title>James Sacci Website Designer and Amateur Underwater Photographer</title>
+  
+  <!-- Social Network Tags -->
+    <meta property="og:title" content="James Sacci Website Designer and Amateur Underwater Photographer">
+	<meta property="og:description" content="Website design, underwater photography and video portfolio for Westchester County, NY resident, James Sacci.">
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content="http://jamessacci.com/img/galapagos-hammerhead-shark.jpg">
+	<meta property="og:site_name" content="James Sacci's Personal Portfolio">
+	<meta property="fb:admins" content="1231385868">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@jsacci">
+    <meta name="twitter:url" content="http://jamessacci.com/">
+    <meta name="twitter:title" content="James Sacci Website Designer and Amateur Underwater Photographer">
+    <meta name="twitter:description" content="Website design, underwater photography and video portfolio for Westchester County, NY resident, James Sacci.">
+    <meta name="twitter:image" content="http://jamessacci.com/img/galapagos-hammerhead-shark.jpg">
+    
+    <meta itemprop="name" content="James Sacci Website Designer and Amateur Underwater Photographer">
+    <meta itemprop="description" content="Website design, underwater photography and video portfolio for Westchester County, NY resident, James Sacci.">
+    <meta itemprop="image" content="http://jamessacci.com/img/galapagos-hammerhead-shark.jpg">
 
   <link href='http://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/foundation.css" />
+  <!--<link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/foundation.css" />-->
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="fonts/foundation_icons_social/foundation_icons_social/stylesheets/social_foundicons.css"> 
   
   <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
@@ -62,14 +82,14 @@
   </nav> 
   <!-- Header -->
    <header class="page-header">
-   	<div class="row">
+   	<div class="row" itemscope itemtype="http://schema.org/Person">
    		<div class="twelve columns">
         
-        		<img class="img-logo" src="img/logo-large.jpg" alt="logo">
+        		<img class="img-logo" src="img/logo-large.jpg" alt="logo"  itemprop="image" />
             
-            <h1>James Sacci</h1>
+            <h1 itemprop="name">James Sacci</h1>
             
-            <h4>Website Designer and Amateur Underwater Photographer<br>living in Westchester County, New York</h4>
+            <h4><span itemprop="jobTitle">Website Designer</span> and Amateur Underwater Photographer<br>living in <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Westchester County</span>, <span itemprop="addressRegion">New York</span></span></h4>
             
         </div>
    	</div>
@@ -215,16 +235,16 @@
         	<div class="row">
             
             	<div class="large-6 columns">
-            		<p class="light-text">&copy; James Sacci Copy and use as you like!</p>
+            		<p class="light-text">&copy; <a class="light-text" href="https://plus.google.com/115243976787900318888?rel=author" title="My Google+ Profile">James Sacci </a>Copy and use as you like!</p>
             	</div>
                 
                 <div class="large-6 columns">
                 	<ul class="inline-list">
-                		<li><i class="button-foundicon foundicon-twitter light-text" aria-hidden="true"></i></li>
-                		<li><i class="button-foundicon foundicon-facebook light-text" aria-hidden="true"></i></li>
-                		<li><i class="button-foundicon foundicon-google-plus light-text" aria-hidden="true"></i></li>
-                		<li><i class="button-foundicon foundicon-linkedin light-text" aria-hidden="true"></i></li>
-                        <li><i class="button-foundicon foundicon-flickr light-text" aria-hidden="true"></i></li>
+                		<li><a href="https://twitter.com/jsacci" title="My Twitter Profile"><i class="button-foundicon foundicon-twitter light-text" aria-hidden="true"></i></a></li>
+                		<li><a href="https://www.facebook.com/james.sacci" title="My Facebook"><i class="button-foundicon foundicon-facebook light-text" aria-hidden="true"></i></a></li>
+                		<li><a class="light-text" href="https://plus.google.com/115243976787900318888" title="My Google+ Profile"><i class="button-foundicon foundicon-google-plus light-text" aria-hidden="true"></i></a></li>
+                		<li><a class="light-text" href="http://www.linkedin.com/in/jamessacci" title="Link up on Linkedin"><i class="button-foundicon foundicon-linkedin light-text" aria-hidden="true"></i></a></li>
+                        <li><a class="light-text" href="http://www.flickr.com/photos/jamessacci/" title="Flickr Photography Site"><i class="button-foundicon foundicon-flickr light-text" aria-hidden="true"></i></a></li>
                 	</ul>
                 </div>
                 
