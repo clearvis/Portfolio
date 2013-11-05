@@ -1,0 +1,20 @@
+// Variables 
+$base: #20579A;
+$base-light: #1D60B4;
+$accent:  #9A2519;
+$accent-light: #E74C3C;
+$highlight: #D0EB55; 	
+$basefont: "Trebuchet MS", san-serif;
+
+%transition {
+	-moz-transition: background-color .3s ease-in;
+  -webkit-transition: background-color .3s ease-in;
+  -o-transition: background-color .3s ease-in;
+  transition: background-color .3s ease-in;
+}
+
+@mixin rounded ($radius: 7px) {
+    border-radius: $radius;
+    behavior: url(PIE.htc); 
+}
+

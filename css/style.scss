@@ -1,5 +1,6 @@
 @import "normalize";
 @import "foundation";
+@import "setup";
 
 /* CSS Custom Style Document
 Colors:
@@ -12,13 +13,13 @@ Dull Green: #52573D
 
 /* Default Link Styles */
 body {
-	color: #050B23;
+	color: $base;
 }
 a {
-  	color: #8B2F3E;
+  	color: $base-light;
 }
 a:hover, a:focus {
-    color: #477001; 
+    color: $accent; 
 }
 
 h1, h2, h3, h4, h5, h6, .name {
@@ -27,14 +28,14 @@ h1, h2, h3, h4, h5, h6, .name {
 }
 
 blockquote, blockquote p {
-    color: #878B3F;
+    color: $accent-light;
 }
 blockquote {
-    border-left: 1px solid #477001;
+    border-left: 1px solid $accent-light;
 }
 
 blockquote cite {
-color: #52573D;
+color: $highlight;
 }
 
 .page-header h1 {
@@ -48,23 +49,23 @@ color: #52573D;
 }	
 
 .light-text {
-    color: #477001;
+    color: $highlight;
 }
 
 .top-bar, .top-bar-section li a:not(.button), .top-bar-section ul {
-	background: #8B2F3E;
+	background: $base-light;
 }
 
 .dark {
-    background-color: #050B23;
+    background-color: $base;
 }
 
 .color {
-    background-color: #878B3F;
+    background-color: $accent-light;
 }
 
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
-    color: #050B23;
+    color: $base;
 }
 
 .panel {
@@ -72,15 +73,15 @@ color: #52573D;
 }
 
 .code-icon-font {
-    color: #477001;
+    color: $accent;
     display: block;
     font-size: 9em;
     text-align: left;
 }
 
 button, .button {
-    background-color: #477001;
-	border-color: #878B3F;
+    background-color: $accent;
+	border-color: $accent-light;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -88,11 +89,11 @@ background-color: #52573D;
 }
 
 .top-bar-section ul li > a:hover {
-	color: #477001;
+	color: $accent-light;
 }
 
 .label { 
-background-color: #878B3F;
+background-color: $accent-light;
 }
 
 .inline-list > li > a > i {
@@ -102,18 +103,18 @@ background-color: #878B3F;
 @media only screen and (min-width: 58.75em) {
 	
 	.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
-		border-right: solid 1px #812837;
-		border-left: solid 1px #9B3E4D;
+		border-right: solid 1px $base;
+		border-left: solid 1px $base-light;
 	}
 	
 	.top-bar-section .dropdown li label {
-		background: #4F3A39;
+		background: $accent;
 	}
 	
 }
 
 .top-bar-section .dropdown label {
-	color: #619B79;
+	color: $highlight;
 }
 
 

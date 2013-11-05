@@ -5264,26 +5264,26 @@ Dull Green: #52573D
  */
 /* Default Link Styles */
 body {
-  color: #050B23; }
+  color: #20579a; }
 
 a {
-  color: #8B2F3E; }
+  color: #1d60b4; }
 
 a:hover, a:focus {
-  color: #477001; }
+  color: #9a2519; }
 
 h1, h2, h3, h4, h5, h6, .name {
   color: #52573D;
   font-weight: bold; }
 
 blockquote, blockquote p {
-  color: #878B3F; }
+  color: #e74c3c; }
 
 blockquote {
-  border-left: 1px solid #477001; }
+  border-left: 1px solid #e74c3c; }
 
 blockquote cite {
-  color: #52573D; }
+  color: #d0eb55; }
 
 .page-header h1 {
   display: inline-block;
@@ -5295,54 +5295,54 @@ blockquote cite {
   margin-left: .5em; }
 
 .light-text {
-  color: #477001; }
+  color: #d0eb55; }
 
 .top-bar, .top-bar-section li a:not(.button), .top-bar-section ul {
-  background: #8B2F3E; }
+  background: #1d60b4; }
 
 .dark {
-  background-color: #050B23; }
+  background-color: #20579a; }
 
 .color {
-  background-color: #878B3F; }
+  background-color: #e74c3c; }
 
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
-  color: #050B23; }
+  color: #20579a; }
 
 .panel {
   border-color: #52573D; }
 
 .code-icon-font {
-  color: #477001;
+  color: #9a2519;
   display: block;
   font-size: 9em;
   text-align: left; }
 
 button, .button {
-  background-color: #477001;
-  border-color: #878B3F; }
+  background-color: #9a2519;
+  border-color: #e74c3c; }
 
 button:hover, button:focus, .button:hover, .button:focus {
   background-color: #52573D; }
 
 .top-bar-section ul li > a:hover {
-  color: #477001; }
+  color: #e74c3c; }
 
 .label {
-  background-color: #878B3F; }
+  background-color: #e74c3c; }
 
 .inline-list > li > a > i {
   font-size: 2em; }
 
 @media only screen and (min-width: 58.75em) {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
-    border-right: solid 1px #812837;
-    border-left: solid 1px #9B3E4D; }
+    border-right: solid 1px #20579a;
+    border-left: solid 1px #1d60b4; }
 
   .top-bar-section .dropdown li label {
-    background: #4F3A39; } }
+    background: #9a2519; } }
 .top-bar-section .dropdown label {
-  color: #619B79; }
+  color: #d0eb55; }
 
 /**** IMPORTANT THESE ARE NEEDED ****/
 #container {
