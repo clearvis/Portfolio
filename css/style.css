@@ -4675,10 +4675,10 @@ h1, h2, h3, h4, h5, h6, .name {
   font-weight: 400; }
 
 blockquote, blockquote p {
-  color: #e74c3c; }
+  color: #fff; }
 
 blockquote {
-  border-left: 1px solid #e74c3c; }
+  border-left: 1px solid #fff; }
 
 blockquote cite {
   color: #d0eb55; }
