@@ -4674,7 +4674,7 @@ h1, h2, h3, h4, h5, h6, .name {
   font-family: 'Advent Pro', sans-serif;
   font-weight: 400; }
 
-ul, ol {
+.section ul, .section ol {
   margin-left: 2em; }
 
 blockquote, blockquote p {
@@ -4689,8 +4689,14 @@ blockquote cite {
 .light-text {
   color: #d0eb55; }
 
+.top-bar.expanded .title-area {
+  background: #1d60b4; }
+
 .top-bar, .top-bar-section li a:not(.button), .top-bar-section ul {
   background: #1d60b4; }
+
+.top-bar-section li a:not(.button):hover {
+  background: #20579a; }
 
 .dark {
   background-color: #20579a;
