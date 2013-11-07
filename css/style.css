@@ -4736,9 +4736,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   background-color: #1d60b4;
   border-color: #20579a; }
 
-.top-bar-section ul li > a:hover {
-  color: #e74c3c; }
-
 .label {
   background-color: #e74c3c; }
 
@@ -4786,7 +4783,13 @@ button:hover, button:focus, .button:hover, .button:focus {
     border-left: solid 1px #1d60b4; }
 
   .top-bar-section .dropdown li label {
-    background: #9a2519; } }
+    background: #20579a; }
+
+  .top-bar-section li a:not(.button) {
+    padding: 0 2em; }
+
+  .top-bar-section .dropdown li a {
+    padding: .5em 1em; } }
 /* ------ Video Tabbed container styles ----------- 
 -
 -

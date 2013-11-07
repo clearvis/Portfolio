@@ -110,10 +110,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 	border-color: $base;
 }
 
-.top-bar-section ul li > a:hover {
-	color: $accent-light;
-}
-
 .label { 
 background-color: $accent-light;
 }
@@ -174,8 +170,16 @@ background-color: $accent-light;
 	}
 	
 	.top-bar-section .dropdown li label {
-		background: $accent;
+		background: $base;
 	}
+	
+	.top-bar-section li a:not(.button) {
+		padding: 0 2em;
+  }
+  
+  .top-bar-section .dropdown li a {
+	  padding: .5em 1em;
+  }
 		
 }
 
