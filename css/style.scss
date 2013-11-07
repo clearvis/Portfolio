@@ -49,7 +49,7 @@ color: $highlight;
     color: $highlight;
 }
 
-.top-bar.expanded .title-area {
+.top-bar.expanded, .top-bar.expanded .title-area {
 	background: $base-light;
 }
 
@@ -57,8 +57,12 @@ color: $highlight;
 	background: $base-light;
 }
 
-.top-bar-section li a:not(.button):hover {
+.top-bar-section li a:not(.button):hover, .name h1 a:hover {
 	background: $base;
+}
+
+.top-bar-section li a:not(.button):focus, .name h1 a:focus {
+	background: #000;
 }
 
 .dark {

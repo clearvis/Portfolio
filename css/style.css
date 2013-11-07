@@ -4689,14 +4689,17 @@ blockquote cite {
 .light-text {
   color: #d0eb55; }
 
-.top-bar.expanded .title-area {
+.top-bar.expanded, .top-bar.expanded .title-area {
   background: #1d60b4; }
 
 .top-bar, .top-bar-section li a:not(.button), .top-bar-section ul {
   background: #1d60b4; }
 
-.top-bar-section li a:not(.button):hover {
+.top-bar-section li a:not(.button):hover, .name h1 a:hover {
   background: #20579a; }
+
+.top-bar-section li a:not(.button):focus, .name h1 a:focus {
+  background: #000; }
 
 .dark {
   background-color: #20579a;
