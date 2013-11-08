@@ -4670,21 +4670,16 @@ a:hover, a:focus {
 
 h1, h2, h3, h4, h5, h6, .name {
   color: #9a2519;
-  font-weight: bold;
-  font-family: 'Advent Pro', sans-serif;
-  font-weight: 400; }
+  font-family: 'Advent Pro', sans-serif; }
 
 .section ul, .section ol {
   margin-left: 2em; }
 
-blockquote, blockquote p {
-  color: #fff; }
-
 blockquote {
-  border-left: 1px solid #fff; }
-
-blockquote cite {
-  color: #d0eb55; }
+  border-left: 1px solid #fff;
+  color: #fff; }
+  blockquote cite {
+    color: #d0eb55; }
 
 .light-text {
   color: #d0eb55; }
@@ -4710,19 +4705,16 @@ blockquote cite {
 
 .color {
   background-color: #e74c3c; }
-
-.color a {
-  color: #d0eb55; }
-
-.color a:hover, .color a:focus {
-  color: #20579a;
-  text-decoration: underline; }
-
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
-  color: #fff; }
+  .color a {
+    color: #d0eb55; }
+  .color a:hover, .color a:focus {
+    color: #20579a;
+    text-decoration: underline; }
 
 .panel {
   border-color: #52573D; }
+  .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+    color: #fff; }
 
 button, .button {
   background-color: #9a2519;
@@ -4753,15 +4745,16 @@ button:hover, button:focus, .button:hover, .button:focus {
   background: url(../img/clownfish.jpg) no-repeat;
   background-size: 100%;
   background-position: center center; }
+  .page-header h1, .page-header h2 {
+    color: #fff;
+    text-shadow: 0px 0px 5px #000; }
+  .page-header h2 {
+    font-size: 1.2em; }
 
 .img-logo {
   border-radius: 100%;
   border: 2px solid #fff;
   vertical-align: middle; }
-
-.page-header h1, .page-header h4 {
-  color: #fff;
-  text-shadow: 1px 1px 3px #fff; }
 
 .page-header h1 {
   display: inline-block;
@@ -4772,11 +4765,20 @@ button:hover, button:focus, .button:hover, .button:focus {
   border-bottom: 3px solid #fff;
   margin-left: .5em; }
 
+.figure-box {
+  margin-bottom: .75em; }
+
 @media only screen and (min-width: 48em) {
   .page-header {
     margin-top: -50px;
     padding-top: 200px;
-    padding-bottom: 50px; } }
+    padding-bottom: 50px; }
+    .page-header h2 {
+      font-size: 1.75em; }
+
+  .footer-social-icons, footer ul.inline-list {
+    float: right;
+    margin-bottom: 0; } }
 @media only screen and (min-width: 58.75em) {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-right: solid 1px #20579a;
@@ -4789,7 +4791,10 @@ button:hover, button:focus, .button:hover, .button:focus {
     padding: 0 2em; }
 
   .top-bar-section .dropdown li a {
-    padding: .5em 1em; } }
+    padding: .5em 1em; }
+
+  .page-header h2 {
+    font-size: 2.25em; } }
 /* ------ Video Tabbed container styles ----------- 
 -
 -
@@ -4807,7 +4812,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .code-icon-font {
   color: #9a2519;
   display: block;
-  font-size: 8em;
+  font-size: 8.65em;
   text-align: left; }
 
 /**** IMPORTANT THESE ARE NEEDED ****/
