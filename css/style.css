@@ -4738,6 +4738,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 .inline-list > li > a > i {
   font-size: 2em; }
 
+small {
+  font-size: 80%; }
+
 /* ------ Header styles ----------- 
 -
 -
@@ -4769,8 +4772,68 @@ button:hover, button:focus, .button:hover, .button:focus {
   border-bottom: 3px solid #fff;
   margin-left: .5em; }
 
+/* ------ Footer styles ----------- 
+-
+-
+-------------------------------- */
+footer a {
+  color: #fff; }
+
 .figure-box {
   margin-bottom: .75em; }
+
+/* ------ Form Validaton styles ----------- 
+-
+-
+-------------------------------- */
+label small {
+  text-transform: capitalize;
+  color: #666666; }
+
+.error small, small.error {
+  font-weight: bold;
+  background: #fff;
+  color: #c60f13;
+  display: inline;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.75em;
+  font-weight: bold; }
+
+.error label, .error label.error {
+  color: #c60f13; }
+
+[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
+  display: block;
+  padding: 0.375em 0.25em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: #c60f13;
+  color: white; }
+
+[data-abide] span.error, [data-abide] small.error {
+  display: none; }
+
+#contactForm input:required:valid, #contactForm textarea:required:valid {
+  /* when a field is considered valid by the browser */
+  background: white url(../img/valid.png) 98% center no-repeat;
+  -webkit-transition: none;
+  transition: none;
+  box-shadow: 0 0 5px #5cd053;
+  border-color: #28921f; }
+
+#contactForm .row.collapse .large-12 {
+  padding-left: 0.9375em;
+  padding-right: 0.9375em; }
+
+#contactForm .row.collapse .large-2 {
+  padding-left: 0.9375em; }
+
+#contactForm .row.collapse .large-10 {
+  padding-right: 0.9375em; }
 
 @media only screen and (min-width: 48em) {
   .page-header {

@@ -70,36 +70,37 @@
       <p>I&acute;d love to hear from you. You can either reach out to me by <span class="radius label">filling out the form</span> below, or by connecting with me on one or all of my social networks. Let me know about your website design, or scuba diving and underwater photography experiences.</p>
  
       <section class="section">
-  <form action="mailer.php" method="post">
+  <form id="contactForm" action="mailer.php" method="post" data-abide>
   
     <fieldset>
 
     <div class="row">
       <div class="large-12 columns">
       <p>I hate spam as much as you. Your information remains <span class="radius label">confidential with me</span>, and only me!</p>
-        <label for="name">Name</label>
+        <label for="name">Name <small>required</small></label>
         <input type="text" name="name" placeholder="Name" required>
-        <small class="error">Invalid entry</small>
+         <small class="error">Name is required and must be a string.</small>
       </div>
     </div>
 
     <div class="row">
       <div class="large-12 columns">
-        <label for="email">Email</label>
+        <label for="email">Email <small>required</small></label>
         <input type="email" name="email" placeholder="username@host.com" required>
+        <small class="error">A valid Email is required.</small>
       </div>
     </div>
     
     <div class="row">
       <div class="large-12 columns">
-        <label for="phone">Phone (Optional)</label>
+        <label for="phone">Phone <small>(Optional)</small></label>
         <input type="tel" name="phone" placeholder="123-456-7890">
       </div>
     </div>
     
     <div class="row collapse">
     <div class="large-12 columns">
-        <label for="url">Website (Optional)</label>
+        <label for="url">Website <small>(Optional)</small></label>
     </div>
     <div class="large-2 columns">
       <span class="prefix">http://</span>
@@ -111,8 +112,9 @@
 
     <div class="row">
       <div class="large-12 columns">
-        <label for="comments">Comments</label>
+        <label for="comments">Comments <small>required</small></label>
         <textarea name="comments" placeholder="Leave a note" rows="5" required></textarea>
+        <small class="error">Please type in your comment.</small>
       </div>
     </div>
     <div class="row">
@@ -249,7 +251,7 @@
   '.js><\/script>')
   </script>  
   <script src="js/foundation.min.js"></script>
-  
+  <script src="js/foundation.abide.js"></script>
   <script>
     $(document).foundation();
   </script>

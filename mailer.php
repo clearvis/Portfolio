@@ -12,6 +12,7 @@ define('SUBJECT', 'Contact Form From James Sacci Portfoliio Website');
 
 $message = 'Message from: ' . $_POST['name'] . ' <'.$_POST['email'].'>' . "\n
 Phone Number: " . $_POST['phone'] . "\n
+Website: " . $_POST['url'] . "\n
 Comments: " . $_POST['comments'];
 
 
