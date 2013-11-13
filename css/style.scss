@@ -88,9 +88,14 @@ blockquote {
 	}
 }
 
-button, .button {
+.button {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+	
+	button, .button {
     background-color: $accent;
-	border-color: $accent-light;
+	border-color: $accent;
 }
 
 .button .button-foundicon {

@@ -4716,9 +4716,13 @@ blockquote {
   .color h1, .color h2, .color h3, .color h4, .color h5, .color h6, .color p {
     color: #fff; }
 
+.button {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 button, .button {
   background-color: #9a2519;
-  border-color: #e74c3c; }
+  border-color: #9a2519; }
 
 .button .button-foundicon {
   padding-right: 6px;
