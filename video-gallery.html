@@ -21,7 +21,7 @@
 	    <script src="http://vjs.zencdn.net/c/video.js"></script>
 
 	    <!-- BigVideo -->
-	    <script src="scripts/bigvideo.js"></script>
+	    <script src="js/big-video/bigvideo.js"></script>
         <script>
 			var BV,
 				isTouch = Modernizr.touch,
@@ -133,7 +133,7 @@
   <header>
 	        <h1>Create full-screen video backgrounds with BigVideo.js</h1>
 	    </header>
-	    <div class="big-video-wrapper clearfix">
+	    <div class="big-video-wrapper">
 	        <div class="video-screen" id="video-screen-1" data-video="video/BirdsandFeeder.mp4">
 	            <img src="img/video1.jpg" class="big-image" />
 	            <h1 class="video-title">Video 1</h1>
@@ -148,7 +148,7 @@
 	    </nav>
  
   <!-- Footer -->
-  <div class="dark">
+  <div class="dark big-video-footer">
   	<footer class="row">
     	
         <div class="large-12 columns">
@@ -185,6 +185,7 @@
   <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
+	$( "html" ).addClass( "big-video" );
   </script>
 </body>
 </html>
