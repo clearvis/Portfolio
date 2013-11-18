@@ -3,9 +3,84 @@ html.big-video, .body_big-video {
 	height: 100%
 }
 
+/* Header */
+
+.body_big-video header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    color: #fff;
+    background: rgba( $accent , 0.7 );
+    padding: 60px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: -200px 0 0 -200px;
+    text-align: center;
+
+
+	h1 {
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+		color: #fff;
+		padding: 0 0 10px 0;
+		font-size: 1.7em;
+	}
+	
+	h1 span {
+		font-weight: 300;
+	}
+	
+	p {
+		font-style: italic;
+		color: #fff;
+	}
+	
+	a {
+		color: $highlight;
+	}
+	
+	a:hover {
+		color: rgba( $highlight, .5 );
+	}
+	
+	a:focus {
+		color: rgba( $base, .9 );
+	}
+
+}
+
+/* Nav */
+
+nav.nav-btn {
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    padding: 20px;
+    background: #000;
+    border-radius: 40px;
+    opacity: .4;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+nav.nav-btn:hover, nav#prev-btn:hover {
+		opacity: .6;	
+	}
+	
+nav.nav-btn	a {
+		font-size: 4em;
+	}
+
+nav#prev-btn {
+		right: auto;
+		left: 5%;
+	}
+
 .big-video-wrapper {
 	position: absolute;
-	width: 100%;
+	top: 45px;
+	width: 400%;
 	height: 100%;
 	z-index: 0;
 }
@@ -13,7 +88,7 @@ html.big-video, .body_big-video {
 .video-screen {
 	position: relative;
 	height: 100%;
-	width: 100%;
+	width: 25%;
 	float: left;
 	overflow: hidden;
 }
@@ -27,7 +102,7 @@ html.big-video, .body_big-video {
 
 .video-title {
 	position: absolute;
-	bottom: 5%;
+	bottom: 150px;
 	right: 5%;
 	opacity: .5;
 	margin: 0;
@@ -42,11 +117,12 @@ html.big-video, .body_big-video {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	opacity: .5;
 }
 
 //Big Video CSS
 
-#big-video-wrap{overflow:hidden;position:fixed;height:100%;width:100%;top:0;left:0;}
+#big-video-wrap{overflow:hidden;position:fixed;height:100%;width:100%;top:45px;left:0;}
 #big-video-vid,#big-video-image{position:absolute;}
 #big-video-control-container{position:fixed;bottom:20px;padding: 0 20px;width:100%;
   -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;}
