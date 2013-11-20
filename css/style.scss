@@ -2,6 +2,7 @@
 @import "foundation";
 @import "setup";
 @import "big-video";
+@import "font-awesome/font-awesome";
 
 /* CSS Custom Style Document
 Colors:
@@ -51,6 +52,10 @@ blockquote {
 	 cite {
 	  	color: $highlight;
 	 }
+}
+
+.figure-caption {
+	line-height: 1.25;
 }
 
 .light-text {
