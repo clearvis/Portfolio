@@ -4864,6 +4864,15 @@ a {
 a:hover, a:focus {
   color: #9a2519; }
 
+a.external-link:after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  padding-left: .25em; }
+
 h1, h2, h3, h4, h5, h6, .name {
   color: #9a2519;
   font-family: 'Advent Pro', sans-serif; }
@@ -4978,6 +4987,12 @@ footer a {
 .figure-box {
   margin-bottom: .75em; }
 
+.fa {
+  padding-right: .05em; }
+
+.fa:hover {
+  color: #e74c3c; }
+
 /* ------ Form Validaton styles ----------- 
 -
 -
@@ -5073,10 +5088,12 @@ label small {
 -
 -------------------------------- */
 .code-icon-font {
-  color: #9a2519;
   display: block;
   font-size: 8.65em;
-  text-align: left; }
+  text-align: left;
+  line-height: 152px; }
+  .code-icon-font a {
+    color: #9a2519; }
 
 /**** IMPORTANT THESE ARE NEEDED ****/
 #container {

@@ -24,6 +24,17 @@ a:hover, a:focus {
     color: $accent; 
 }
 
+// target external links
+a.external-link:after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  padding-left: .25em;
+}
+
 h1, h2, h3, h4, h5, h6, .name {
 	color: $accent;
 	font-family: 'Advent Pro', sans-serif;
@@ -174,6 +185,16 @@ footer a {
 	margin-bottom: .75em;
 }
 
+// Hover for font awesome
+
+.fa {
+	padding-right: .05em;
+}
+
+.fa:hover {
+	color: $accent-light;
+}
+
 /* ------ Form Validaton styles ----------- 
 -
 -
@@ -299,10 +320,14 @@ label small {
 -------------------------------- */
 
 .code-icon-font {
-    color: $accent;
     display: block;
     font-size: 8.65em;
     text-align: left;
+	line-height: 152px;
+	
+	a {
+		color: $accent;
+	}
 }
 
 
