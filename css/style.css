@@ -4988,10 +4988,10 @@ footer a {
   margin-bottom: .75em; }
 
 .fa {
-  padding-right: .05em; }
-
-.fa:hover {
-  color: #e74c3c; }
+  padding-right: .05em;
+  transition: color 0.5s ease; }
+  .fa:hover {
+    color: #e74c3c; }
 
 /* ------ Form Validaton styles ----------- 
 -

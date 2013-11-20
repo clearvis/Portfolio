@@ -189,10 +189,11 @@ footer a {
 
 .fa {
 	padding-right: .05em;
-}
+	transition: color 0.5s ease;
 
-.fa:hover {
-	color: $accent-light;
+	&:hover {
+		color: $accent-light;
+	}
 }
 
 /* ------ Form Validaton styles ----------- 
