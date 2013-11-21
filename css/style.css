@@ -6243,6 +6243,9 @@ blockquote {
 .main {
   padding: 20px 0 20px 0; }
 
+table li {
+  margin-left: 2em; }
+
 .color {
   background-color: #e74c3c; }
   .color a {
