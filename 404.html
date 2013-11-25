@@ -3,72 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Page Not Found :(</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Advent+Pro|Adamina' rel='stylesheet' type='text/css'>
+  		<link rel="stylesheet" type="text/css" href="css/style.css" />
+        
         <style>
-            ::-moz-selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
-
-            ::selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
-
-            html {
-                padding: 30px 10px;
-                font-size: 20px;
-                line-height: 1.4;
-                color: #737373;
-                background: #f0f0f0;
-                -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;
-            }
-
-            html,
-            input {
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            body {
-                max-width: 500px;
-                _width: 500px;
-                padding: 30px 20px 50px;
-                border: 1px solid #b3b3b3;
-                border-radius: 4px;
-                margin: 0 auto;
-                box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-                background: #fcfcfc;
-            }
-
-            h1 {
-                margin: 0 10px;
-                font-size: 50px;
-                text-align: center;
-            }
-
-            h1 span {
-                color: #bbb;
-            }
-
-            h3 {
-                margin: 1.5em 0 0.5em;
-            }
-
-            p {
-                margin: 1em 0;
-            }
-
-            ul {
-                padding: 0 0 0 40px;
-                margin: 1em 0;
-            }
-
-            .container {
-                max-width: 380px;
-                _width: 380px;
-                margin: 0 auto;
-            }
-
+            
             /* google search */
 
             #goog-fixurl ul {
@@ -140,7 +80,49 @@
         </style>
     </head>
     <body>
-        <div class="container">
+    
+    <!-- Navigation -->
+    
+    <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <a href="index.html" title="Home Page">Web Design Portfolio &amp; My Life</a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul>
+ 
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+        <li><a href="about.html" title="My Web Design Bio">About Me</a></li>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a class="active" href="portfolio.html" title="Links to work samples">Portfolio</a>
+          <ul class="dropdown">
+          	<li><label>Website Design</label></li>
+          	<li><a href="client-portfolio.html" title="Websites I have designed">Clients</a></li>
+            <li><label>Scuba Travel</label></li>
+          	<li><a href="photo-gallery.html" title="Travel Photo Gallery">Photography</a></li>
+            <li><a href="video-gallery.html" title="Scuba Video Gallery">Video</a></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li><a href="html-css-examples/" title="Cutting edge coding examples">Blog</a></li>
+        <li class="divider"></li>
+        <li>
+          <a href="contact.html" title="Contact and Social Media">Connect</a>
+        </li>
+        
+      </ul>
+    </section>
+  </nav> 
+  
+  
+        <div class="row">
             <h1>Not found <span>:(</span></h1>
             <p>Sorry, but the page you were trying to view does not exist.</p>
             <p>It looks like this was the result of either:</p>
@@ -153,5 +135,47 @@
             </script>
             <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
         </div>
+        
+       <!-- Footer -->
+  <div class="dark">
+  	<footer class="row">
+    	
+        <div class="large-12 columns">
+        
+        	<div class="row">
+            
+            	<div class="large-6 columns">
+            		<p class="light-text">&copy; <a class="light-text" href="https://plus.google.com/115243976787900318888?rel=author" title="My Google+ Profile">James Sacci </a>Copy and use as you like!</p>
+            	</div>
+                
+                <div class="large-6 columns">
+                	<ul class="inline-list footer-social-icons">
+                		<li><a href="https://twitter.com/jsacci" title="My Twitter Profile"><i class="fa fa-twitter light-text" aria-hidden="true"></i></a></li>
+                		<li><a href="https://www.facebook.com/james.sacci" title="My Facebook"><i class="fa fa-facebook fa-2 light-text" aria-hidden="true"></i></a></li>
+                		<li><a class="light-text" href="https://plus.google.com/+JamesSacci" title="My Google+ Profile"><i class="fa fa-google-plus fa-2 light-text" aria-hidden="true"></i></a></li>
+                		<li><a class="light-text" href="http://www.linkedin.com/in/jamessacci" title="Link up on Linkedin"><i class="fa fa-linkedin fa-2 light-text" aria-hidden="true"></i></a></li>
+                        <li><a class="light-text" href="http://www.flickr.com/photos/jamessacci/" title="Flickr Photography Site"><i class="fa fa-flickr fa-2 light-text" aria-hidden="true"></i></a></li>
+                	</ul>
+                </div>
+                
+            </div><!-- end .row -->
+            
+            
+            
+        </div>
+    	
+    </footer>
+  </div><!-- end .dark -->
+  
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>  
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+        
     </body>
 </html>

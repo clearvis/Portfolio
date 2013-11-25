@@ -6669,6 +6669,9 @@ label small {
   padding-right: 0.9375em; }
 
 @media only screen and (min-width: 48em) {
+  .top-bar li.current a {
+    background: #9a2519; }
+
   .page-header {
     margin-top: -50px;
     padding-top: 200px;
