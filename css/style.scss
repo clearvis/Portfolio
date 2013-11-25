@@ -1,6 +1,7 @@
 @import "normalize";
 @import "foundation";
 @import "setup";
+@import "component";
 @import "big-video";
 @import "font-awesome/font-awesome";
 
@@ -16,6 +17,7 @@ Dull Green: #52573D
 /* Default Link Styles */
 body {
 	color: $base;
+	font-family: 'Adamina', serif;
 }
 
 a {
@@ -76,6 +78,10 @@ blockquote {
 
 .top-bar-section li a:not(.button):focus, .name h1 a:focus {
 	background: #000;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+	text-indent: -60px;
 }
 
 .dark {
