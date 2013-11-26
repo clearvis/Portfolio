@@ -6697,7 +6697,10 @@ label small {
     padding: .5em 1em; }
 
   .page-header h2 {
-    font-size: 2.25em; } }
+    font-size: 2.25em; }
+
+  .client-view img {
+    margin-bottom: 1em; } }
 /* ------ Video Tabbed container styles ----------- 
 -
 -
