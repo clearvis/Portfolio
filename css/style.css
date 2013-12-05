@@ -6723,6 +6723,73 @@ label small {
   .code-icon-font a {
     color: #9a2519; }
 
+/* ------ Client Portfolio Page Hover effects ----------- 
+-
+-
+-------------------------------- */
+.client-item .client-view {
+  text-align: left;
+  position: relative; }
+
+.client-item figure {
+  margin: 0;
+  position: relative; }
+
+.client-item figure img {
+  width: 100%;
+  display: block;
+  position: relative; }
+
+.client-item figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #2c3f52;
+  color: #ed4e6e; }
+
+.client-item figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff; }
+
+.client-item figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff; }
+
+.cs-style-6 figure img {
+  z-index: 10;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s; }
+
+.no-touch .cs-style-6 figure:hover img,
+.cs-style-6 figure.cs-hover img {
+  -webkit-transform: translateY(-50px) scale(0.5);
+  -moz-transform: translateY(-50px) scale(0.5);
+  -ms-transform: translateY(-50px) scale(0.5);
+  transform: translateY(-50px) scale(0.5); }
+
+.cs-style-6 figcaption {
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.cs-style-6 figcaption h3 {
+  margin-top: 70%;
+  font-size: 1.5em; }
+
+.cs-style-6 figcaption a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+
 /**** IMPORTANT THESE ARE NEEDED ****/
 #container {
   float: none;
