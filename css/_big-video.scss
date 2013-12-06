@@ -118,7 +118,13 @@ nav#prev-btn {
 	left: 0;
 	right: 0;
 	opacity: .5;
+	
+	&:hover {
+		opacity: 1;
+	}
 }
+
+
 
 //Big Video CSS
 

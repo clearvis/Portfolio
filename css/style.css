@@ -5024,6 +5024,8 @@ nav#prev-btn {
   left: 0;
   right: 0;
   opacity: .5; }
+  .big-video-footer:hover {
+    opacity: 1; }
 
 #big-video-wrap {
   overflow: hidden;
