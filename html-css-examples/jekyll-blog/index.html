@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="CSS HTML WordPress Tutorials by James Sacci, Westchester County, NY Web Developer.">
+  <meta name="author" content="../humans.txt">
+  <meta name="Copyright" content="Copyright James Sacci 2013. All Rights Reserved.">
+  <meta name="viewport" content="width=device-width" />
+  
+   <title> Generate Blog Using Jekyll -  James Sacci Blog</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  
+  <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+  
+  <!-- Social Network Tags -->
+    <meta property="og:title" content="Blogging About Website Development">
+	<meta property="og:description" content="CSS HTML WordPress Tutorials by James Sacci, Westchester County, NY Web Developer.">
+	<meta property="og:type" content="website"> 
+	<meta property="og:image" content="http://jamessacci.com/img/galapagos-hammerhead-shark.jpg">
+	<meta property="og:site_name" content="James Sacci's Personal Portfolio">
+	<meta property="fb:admins" content="1231385868">
+    
+    
+    <meta itemprop="name" content="Blogging About Website Development">
+    <meta itemprop="description" content="CSS HTML WordPress Tutorials by James Sacci, Westchester County, NY Web Developer.">
+    <meta itemprop="image" content="http://jamessacci.com/img/galapagos-hammerhead-shark.jpg">
+  
+  <script src="../../js/vendor/custom.modernizr.js"></script>
+  
+</head>
+
+<body class="internal">
+
+	<!-- Navigation -->
+ 
+  <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1>
+          <a href="../../index.html" title="Home Page">Web Design Portfolio &amp; My Life</a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul>
+ 
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+        <li><a href="../../about.html" title="My Web Design Bio">About Me</a></li>
+        <li class="divider"></li>
+        <li class="has-dropdown">
+          <a class="active" href="../../portfolio.html" title="Links to work samples">Portfolio</a>
+          <ul class="dropdown">
+          	<li><label>Website Design</label></li>
+          	<li><a href="../../client-portfolio.html" title="Websites I have designed">Clients</a></li>
+            <li><label>Scuba Travel</label></li>
+          	<li><a href="../../photo-gallery.html" title="Travel Photo Gallery">Photography</a></li>
+            <li><a href="../../video-gallery.html" title="Scuba Video Gallery">Video</a></li>
+          </ul>
+        </li>
+        <li class="divider"></li>
+        <li class="current"><a href="../" title="Cutting edge coding examples">Blog</a></li>
+        <li class="divider"></li>
+        <li>
+          <a href="../../contact.html" title="Contact and Social Media">Connect</a>
+        </li>
+        
+      </ul>
+    </section>
+  </nav> 
+  
+  <!-- Blog Posts Begin -->
+  <div class="row">
+    <section class="row">
+      <section class="large-8 columns">
+        <article>
+
+  <header class="post">
+    
+      <h1 id="responsive_headline">Generate Blog Using Jekyll</h1>
+    <p class="date">December 10, 2013</p>
+  </header>
+
+  <section class="entry">
+      <h1>Installing Jekyll </h1>
+
+<p>Jekyll can be installed easily as a <a href="http://rubygems.org/" title="Official download page">Rubg Gem</a> from the source using your terminal window. Full instructions explain how it's <a href="http://jekyllrb.com/docs/installation/" title="External link to Jekyll Instructions">installed</a>, with a link provided if you need to install on a Windows OS.</p>
+
+<h2>Advantages Using Jekyll and Ruby over CMS </h2>
+
+<ul>
+<li>Pure HTML</li>
+<li>Compiled from simple markdown files</li>
+<li>No database dependencies</li>
+</ul>
+
+
+<h3>Available Features</h3>
+
+<ul>
+<li>Pagination</li>
+<li>Comments Using Discus</li>
+<li>404 Error Page</li>
+<li>Social Sharing</li>
+<li>Publish Files With Github</li>
+</ul>
+
+
+<p>What convinced me to go about using Jekyll to create my blog was being able to accomplish it without the need for WordPress, and its heavy dependence on a database, and reliance on media libraries. My inspiration came from an artcle wriiten by <a href="http://hop.ie/blog/your-own-blog-1/" title="Your Own Blog Part 1">Donovan Hutchinson</a> that gave step by step instructions on how to create the layout.</p>
+
+<p>To get started on the project I downloaded the template <a href="https://github.com/necolas/jekyll-boilerplate" title="Available on Github">Jekyll boilerplate by Necolas</a> that includes a <strong>README</strong> file explaining the layout, and configuration files.</p>
+
+<p>Once your Markdown files are placed into the <em>_posts</em> folder, you can run <code>jekyll build</code>, which will compile the files into the <em>_site</em> folder. Deployment to your live website can be accomplished by using FTP, or easily using <a href="http://jekyllrb.com/docs/github-pages/" title="Direct your site to Github">Github Pages</a>.</p>
+
+  </section>
+
+  <section class="article-signoff">
+  <p>Want more like this?</p>
+  <h3>You should follow me on Twitter <a href="http://twitter.com/jsacci">here</a>.</h3>
+  </section>
+
+  <section class="discussion">
+    <div id="disqus_thread"></div>
+    
+     <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'htmlcssblog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+    
+  </section>
+
+</article>
+
+
+      </section>
+      <aside class="large-4 columns">
+        <h3>My Mentors</h3>
+        <ul class="side-nav">
+          <li><a href="http://css-tricks.com/" title="Chris Coyier">CSS Tricks</a></li>
+          <li><a href="http://www.sitepoint.com/" title="Web developer resources">Sitepoint</a></li>
+          <li><a href="http://www.smashingmagazine.com/" title="Blogs, books, newsletters">Smashing Magazine</a></li>
+          <li><a href="http://www.impressivewebs.com/" title="Louis Lazaris">Impressive Webs</a></li>
+          <li><a href="http://css-weekly.com/" title="Weekly roundup of HTML CSS tutorials">CSS Weekly</a></li>
+          <li><a href="http://tympanus.net/codrops/" title="Web design and development blog">codrops</a></li>
+          <li><a href="http://csswizardry.com/" title="Harry Roberts">CSS Wizardry</a></li>
+          <li><a href="http://lea.verou.me/">Lea Verou</a></li>
+          <li><a href="https://learnable.com/" title="Web design books, videos, and screencasts">Learnable</a></li>
+          <li><a href="http://www.webdesignermag.co.uk/" title="Magazine cutting edge development">Web Designer</a></li>
+        </ul>
+        <section class="popular-posts">
+
+        </section>
+      </aside>
+    </section>
+  </div>
+  <!-- End Blog Posts -->
+  
+  <!-- Footer -->
+  <div class="dark">
+  	<footer class="row">
+    	
+        <div class="large-12 columns">
+        
+        	<div class="row">
+            
+            	<div class="large-6 columns">
+            		<p class="light-text">&copy; <a class="light-text external-link" href="https://plus.google.com/115243976787900318888?rel=author" title="My Google+ Profile">James Sacci </a>Copy and use as you like!</p>
+            	</div>
+                
+                <div class="large-6 columns">
+                	<ul class="inline-list footer-social-icons">
+                		<li><a href="https://twitter.com/jsacci" title="My Twitter Profile"><i class="fa fa-twitter light-text" aria-hidden="true"></i></a></li>
+                		<li><a href="https://www.facebook.com/james.sacci" title="My Facebook"><i class="fa fa-facebook fa-2 light-text" aria-hidden="true"></i></a></li>
+                		<li><a class="light-text" href="https://plus.google.com/+JamesSacci" title="My Google+ Profile"><i class="fa fa-google-plus fa-2 light-text" aria-hidden="true"></i></a></li>
+                		<li><a class="light-text" href="http://www.linkedin.com/in/jamessacci" title="Link up on Linkedin"><i class="fa fa-linkedin fa-2 light-text" aria-hidden="true"></i></a></li>
+                        <li><a class="light-text" href="http://www.flickr.com/photos/jamessacci/" title="Flickr Photography Site"><i class="fa fa-flickr fa-2 light-text" aria-hidden="true"></i></a></li>
+                	</ul>
+                </div>
+                
+            </div><!-- end .row -->
+            
+            
+            
+        </div>
+    	
+    </footer>
+  </div><!-- end .dark -->
+ 
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '../../js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>  
+  <script src="../../js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();	
+  </script>
+  
+</body>
+</html>

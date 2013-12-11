@@ -39,6 +39,8 @@ a.external-link:after {
   padding-left: .25em;
 }
 
+.side-nav li a { text-decoration: none; color: $accent-light; }
+
 h1, h2, h3, h4, h5, h6, .name {
 	color: $accent;
 	font-family: 'Advent Pro', sans-serif;

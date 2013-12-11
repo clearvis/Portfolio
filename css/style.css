@@ -7338,6 +7338,10 @@ a.external-link:after {
   text-decoration: inherit;
   padding-left: .25em; }
 
+.side-nav li a {
+  text-decoration: none;
+  color: #e74c3c; }
+
 h1, h2, h3, h4, h5, h6, .name {
   color: #9a2519;
   font-family: 'Advent Pro', sans-serif; }
