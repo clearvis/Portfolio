@@ -2,3 +2,10 @@
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 
 User-agent: *
+Disallow: /hypnosac/
+Disallow: /facebook/
+Disallow: /dbdemo/
+Disallow: /_notes/
+Disallow: /magento/
+Disallow: /phpmyadmin/
+Disallow: /teri/
