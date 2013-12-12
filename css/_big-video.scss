@@ -4,7 +4,6 @@ html.big-video, .body_big-video {
 }
 
 /* Header */
-
 .body_big-video header {
     position: absolute;
     top: 50%;
@@ -12,11 +11,11 @@ html.big-video, .body_big-video {
     z-index: 999;
     color: #fff;
     background: rgba( $accent , 0.7 );
-    padding: 60px;
-    width: 400px;
-    height: 400px;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin: -200px 0 0 -200px;
+    margin: -100px 0 0 -100px;
     text-align: center;
 
 
@@ -24,16 +23,17 @@ html.big-video, .body_big-video {
 		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 		color: #fff;
 		padding: 0 0 10px 0;
-		font-size: 1.7em;
+		font-size: .75em;
 	}
 	
 	h1 span {
 		font-weight: 300;
 	}
 	
-	p {
+	p, span {
 		font-style: italic;
 		color: #fff;
+		font-size: .65em;
 	}
 	
 	a {
@@ -50,13 +50,31 @@ html.big-video, .body_big-video {
 
 }
 
+@media only screen and (min-width: 48em) {
+.body_big-video header {
+    padding: 60px;
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+
+
+	h1 {
+		font-size: 1.7em;
+	}
+		
+	p {
+		font-size: 1em;
+	}
+}
+}
+
 /* Nav */
 
 nav.nav-btn {
     position: absolute;
     right: 5%;
     top: 45%;
-    padding: 20px;
+    padding: 5px;
     background: #000;
     border-radius: 40px;
     opacity: .4;
@@ -69,13 +87,25 @@ nav.nav-btn:hover, nav#prev-btn:hover {
 	}
 	
 nav.nav-btn	a {
-		font-size: 4em;
+		font-size: 2em;
 	}
 
 nav#prev-btn {
 		right: auto;
 		left: 5%;
 	}
+	
+@media only screen and (min-width: 48em) {
+	
+	nav.nav-btn {
+    padding: 20px;
+}
+	
+nav.nav-btn	a {
+		font-size: 4em;
+	}
+	
+}
 
 .big-video-wrapper {
 	position: absolute;
@@ -100,16 +130,23 @@ nav#prev-btn {
 	height: auto;
 }
 
-.video-title {
+h1.video-title {
 	position: absolute;
-	bottom: 150px;
+	bottom: 10px;
 	right: 5%;
 	margin: 0;
 	padding: 0;
 	line-height: 1;
 	font-family: sans-serif;
-	font-size: 2em;
+	font-size: 1em;
 	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 48em) {
+	h1.video-title {
+		font-size: 2em;
+		bottom: 150px;
+	}
 }
 
 .big-video-footer {
