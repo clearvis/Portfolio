@@ -6,3 +6,4 @@ Disallow: /_notes/
 Disallow: /magento/
 Disallow: /phpmyadmin/
 Disallow: /teri/
+Disallow: /tssc/
